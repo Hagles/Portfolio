@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+
+
+
+.App {
+  background-color: rgb(66, 66, 66);
+  height: 2700px;
+  background-position-x: center;
+  /* background-position-y: -600px; */
+  background-repeat: no-repeat;
+  background-size: var(--background-size);
+  background-attachment:fixed;
+  /* background-attachment:local; */
+}
+.corner-image{
+  width: 500px;
+  /* position: absolute; */
+z-index: 2;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    
+  transition: all 1.3s ease-in-out;
+    background-size: 1200px ;
+  }
+}

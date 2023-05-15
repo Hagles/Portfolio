@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+.headerFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.headerContainer {
+ /* justify-content: space-around; */
+}
+
+a {
+  position: relative;
+  margin: 10px 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 28px;
+  background: -webkit-radial-gradient(#cc2d2d, #5309ad, #cc2d2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.7s ease-in-out;
+}
+
+a:hover {
+  font-size: 28px;
+  background: -webkit-radial-gradient(#5309ad, #cc2d2d, #5309ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about {
+  transition: all 1s ease-in-out;
+}
+/* .Tabout {
+  position: absolute;
+  margin-top: 30px;
+} */
+
+@media screen and (max-width: 800px) {
+  .headerFixed {
+    scale: 0.5;
+    /* content-visibility:hidden;     */
+    margin-left: 98%; /* The width is 100%, when the viewport is 800px or smaller */
+    transition: all 1s ease-in-out;
+  }
+}
