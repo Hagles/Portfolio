@@ -8,15 +8,21 @@ export default function About() {
   return (
 <div>
 
-    <div className='About'>
+    
       <div
-        className={`containerAbout ${scrollCount >= 20 && scrollCount < 60 ? "containerAbout": "transformAbout"}` } 
-      
-      >
-        Hi, Welcom you for visiting my Site. I am Tomas, And this is my story
-        ...
+        className={`Bio ${scrollCount >= 61 && scrollCount < 80  ? "Bio": "transformBio"}` } 
+        >
+        <div className="containerBio">
 
-        </div>   
+        <p id="bio">Bio</p>
+        <div>
+        <p>"As a curious child, I would often take apart all of my toys. However, over time, I not only learned to put them back together, but these experiences also shaped me and formed the foundation of my programming mindset."</p>
+        <p></p>
+        <p></p>
+        <p>fdgfdg</p>
+        </div>
+        </div>
+         
       </div>
     </div>
   );

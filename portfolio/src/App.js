@@ -13,7 +13,9 @@ import "./App.css";
 
 function App() {
   const [scrollCount, setScrollCount] = useState(0);
+  const [introScroll, setIntroScroll] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
+
 
   useEffect(() => {
     function handleScroll() {
@@ -22,15 +24,24 @@ function App() {
         document.documentElement.scrollTop ||
         document.body.scrollTop ||
         0;
+
       const zoomLevel = Math.round(window.devicePixelRatio * 100);
       const backgroundSize = zoomLevel < 1000 ? `${zoomLevel}%` : "cover";
       document.documentElement.style.setProperty(
         "--background-size",
         backgroundSize
       );
-      
-      setScrollCount(scrollPosition / 10);
-      setWidth(window.innerWidth / 10);
+
+      let scrollIntro;
+      if (scrollCount >=60 ) {
+        scrollIntro = 60
+      }else if(introScroll >=60){
+        scrollIntro = 60
+      }
+      setIntroScroll(scrollIntro);
+
+      setScrollCount(scrollPosition/width );
+      setWidth(window.innerWidth / 30);
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -47,14 +58,14 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-      {/* <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/> */}
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/> */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
-      <UserContext.Provider value={{ scrollCount, width }}>
+      <UserContext.Provider value={{ scrollCount, width, introScroll }}>
         <Intro className="Intro" />
-        {/* <Header className="Header" /> */}
-        {/* <About className="AboutComponent" /> */}
-        {/* <Skills className="Skills" /> */}
+        <Header className="Header" />
+        <About className="About" />
+        <Skills className="Skills" />
         {/* <Contact className="Contact" />
         <Resume className="Resume" /> */}
       </UserContext.Provider>

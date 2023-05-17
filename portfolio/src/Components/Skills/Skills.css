@@ -1,34 +1,64 @@
-.Skills{
-  position: relative;
-  padding-top: 3rem;
-  display: flex;
-  justify-content: center;
-   
-}
-.containerSkills{
+.Skills {
   position: fixed;
-  margin-top: 73px;
-  width: 800px;
-  height: 20rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: lightblue;
+  /* align-items: center; */
+  width: 800px;
+  height: 450px;
+  margin-left: -350px;
+  margin-top: 160px;
+  border-left: solid red 3px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: lightslategray;
   transition: all 2s ease-in-out;
-  z-index: 1;
-  border-radius: 30px;
+  animation: fadeOutSkills 2s ease-in forwards;
+}
+@keyframes fadeOutSkills {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.containerSkills {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Josefin Slab", monospace;
+  color: black;
+}
+
+#Skills{
+  font-size: 35px;
 }
 
 
 .transformSkills {
-  /* position: fixed; */
-  /* visibility: hidden; */
-  margin-top: 60px;
-  margin-left: 90px;
-  margin-right: 1100px;
-  scale: 0.3;
+  margin-top: 160px;
+  margin-left: -350px;
+  scale: 0.1;
+  border: solid gray 4px;
   z-index: 0;
-  opacity: 0.5;
   border-radius: 30px;
-  /* transform: rotate(10deg); */
+  animation: fadeInBio 2s ease-in forwards;
+}
+
+@keyframes fadeInSkills {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Skills {
+    scale: 0.45;
+    margin-top: 40px;
+    margin-left: -400px; 
+    /* transition: all 1s ease-in-out; */
+  }
 }
