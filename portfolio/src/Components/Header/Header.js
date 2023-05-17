@@ -4,7 +4,7 @@ import ProfilePictureSmall from "./ProfPicSmall.png";
 import "./Header.css";
 
 export default function Header() {
-  const { scrollCount, width, introScroll } = useContext(UserContext);
+  const { scrollCount, width, introScroll, setScrollCount  } = useContext(UserContext);
 
   const handleDownload = () => {
     const fileName = 'Balaz Tomas-Resume.pdf'; 
@@ -18,51 +18,55 @@ export default function Header() {
     document.body.removeChild(link);
   };
 
-
+  const handleClick = (value) => {
+    // Update the scrollCount value based on the clicked value
+    setScrollCount(value);
+  };
 
   return (
     <div
       className={`Header ${introScroll >= 60 ? "show" : "hidden"}`}
     >
-      <div className="headerLeft">
+      <div className="headerLeft" >
         <img
           src={ProfilePictureSmall}
+          onClick={() => handleClick(0)}
           alt="Profile"
           className="HeaderProfImg"
         />
-        <a href="http://localhost:3000/" className="profName">
+        <p onClick={() => handleClick(0)} className="headerLinks">
           Tomas Balaz
-        </a>
-        <a
-          href="http://localhost:3000/"
+        </p>
+        <p
+           onClick={() => handleClick(60)}
           className={`headerLinks ${introScroll >= 60 ? "fade-in-Header " : "hidden"}`}
         >
           Bio
-        </a>
-        <a
-          href="http://localhost:3000/"
+        </p>
+        <p
+           onClick={() => handleClick(95)}
           className={`headerLinks ${introScroll >= 60 ? "fade-in-Header " : "hidden"}`}
         >
           Skills
-        </a>
+        </p>
         {/* <p className="scroll">{introScroll}</p>
         <p className="scroll">{scrollCount}</p>
         <p className="scroll">{width}</p> */}
       </div>
       <div className="headerRight">
-        <a
-          href="http://localhost:3000/"
+        <p
+          onClick={() => handleClick(135)}
           id="ContactId" 
           className={`headerLinks ${introScroll >=60 ? "fade-in-Header " : "hidden"}`}
         >
           Contact
-        </a>
-        <a
+        </p>
+        <p
           href="" onClick={handleDownload}
           className={`headerLinks ${introScroll >=60 ? "fade-in-Header " : "hidden"}`}
         >
           Resume
-        </a>
+        </p>
       </div>
     </div>
   );

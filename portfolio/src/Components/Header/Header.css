@@ -60,21 +60,34 @@
   margin-top: 10px;
   margin-left: 20px;
   margin-bottom: 10px;
+  transition: all 0.1s ease-in-out;
 }
-a {
+.HeaderProfImg:hover{
+ opacity: 80%;
+}
+
+#bio{
   text-decoration: none;
   font-size: 20px;
   font-family: "Josefin Slab", monospace;
   color: white;
 }
 
-a:hover {
+.headerLinks {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Josefin Slab", monospace;
+  color: white;
+}
+
+.headerLinks:hover {
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
   font-family: "Josefin Slab", monospace;
   color: white;
 }
+
 
 #ContactId {
   text-decoration: none;
