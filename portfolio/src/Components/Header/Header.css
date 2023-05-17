@@ -34,9 +34,10 @@
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  box-shadow: 0 1.5px darkgray;
+  border-bottom: solid gray 1px;
+  box-shadow: 0 0.5px gray;
 }
 
 .headerLeft {

@@ -6,6 +6,20 @@ import "./Header.css";
 export default function Header() {
   const { scrollCount, width, introScroll } = useContext(UserContext);
 
+  const handleDownload = () => {
+    const fileName = 'Balaz Tomas-Resume.pdf'; 
+    const fileUrl = `${process.env.PUBLIC_URL}/${fileName}`; // Construct the file URL
+  
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
+
   return (
     <div
       className={`Header ${introScroll >= 60 ? "show" : "hidden"}`}
@@ -31,25 +45,24 @@ export default function Header() {
         >
           Skills
         </a>
-        <p className="scroll">{introScroll}</p>
+        {/* <p className="scroll">{introScroll}</p>
         <p className="scroll">{scrollCount}</p>
-        <p className="scroll">{width}</p>
+        <p className="scroll">{width}</p> */}
       </div>
       <div className="headerRight">
         <a
           href="http://localhost:3000/"
-          id="ContactId"
+          id="ContactId" 
           className={`headerLinks ${introScroll >=60 ? "fade-in-Header " : "hidden"}`}
         >
           Contact
         </a>
         <a
-          href="http://localhost:3000/"
+          href="" onClick={handleDownload}
           className={`headerLinks ${introScroll >=60 ? "fade-in-Header " : "hidden"}`}
         >
           Resume
         </a>
-        
       </div>
     </div>
   );

@@ -5,8 +5,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./Components/Header/Header";
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
-import Contact from "./Components/Contact/Contact";
-import Resume from "./Components/Resume/Resume";
+import ContactResume from "./Components/ContactResume/ContactResume";
 import Intro from "./Components/Intro/Intro";
 
 import "./App.css";
@@ -66,8 +65,7 @@ function App() {
         <Header className="Header" />
         <About className="About" />
         <Skills className="Skills" />
-        {/* <Contact className="Contact" />
-        <Resume className="Resume" /> */}
+        <ContactResume className="ContactResume" />
       </UserContext.Provider>
     </div>
   );

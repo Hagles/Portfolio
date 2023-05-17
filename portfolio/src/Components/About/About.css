@@ -5,12 +5,11 @@
   /* align-items: center; */
   width: 800px;
   height: 450px;
-  margin-left: -350px;
+  margin-left: -400px;
   margin-top: 160px;
-  border-left: solid red 3px;
+  border-left: solid gray 1px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  background-color: lightslategray;
   transition: all 2s ease-in-out;
   animation: fadeOutBio 2s ease-in forwards;
 }
@@ -25,9 +24,8 @@
 
 .containerBio {
   font-size: 20px;
-  font-weight: 600;
   font-family: "Josefin Slab", monospace;
-  color: black;
+  color: white
 }
 
 #bio{
@@ -37,7 +35,7 @@
 
 .transformBio {
   margin-top: 160px;
-  margin-left: -350px;
+  margin-left: -400px;
   scale: 0.1;
   border: solid gray 4px;
   z-index: 0;

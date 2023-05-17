@@ -8,11 +8,11 @@ export default function Skills() {
 
   return (
     <div
-    className={`Skills ${scrollCount >= 81 && scrollCount < 120  ? "Skills": "transformSkills"}` } 
+    className={`Skills ${scrollCount >= 90 && scrollCount < 130  ? "Skills": "transformSkills"}` } 
     >
     <div className="containerSkills">
 
-    <p id="Skills">Bio</p>
+    <p id="Skills">Skills</p>
     <div>
     <p>"As a curious child, I would often take apart all of my toys. However, over time, I not only learned to put them back together, but these experiences also shaped me and formed the foundation of my programming mindset."</p>
     <p></p>

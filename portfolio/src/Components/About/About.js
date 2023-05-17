@@ -10,7 +10,7 @@ export default function About() {
 
     
       <div
-        className={`Bio ${scrollCount >= 61 && scrollCount < 80  ? "Bio": "transformBio"}` } 
+        className={`Bio ${scrollCount >= 50 && scrollCount < 90  ? "Bio": "transformBio"}` } 
         >
         <div className="containerBio">
 
