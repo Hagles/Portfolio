@@ -55,6 +55,7 @@
 }
 
 .HeaderProfImg {
+  opacity: 80%;
   height: 50px;
   border-radius: 25px;
   margin-top: 10px;
@@ -62,11 +63,12 @@
   margin-bottom: 10px;
   transition: all 0.1s ease-in-out;
 }
-.HeaderProfImg:hover{
- opacity: 80%;
+.HeaderProfImg:hover {
+  opacity: 100%;
+  scale: 0.95;
 }
 
-#bio{
+#bio {
   text-decoration: none;
   font-size: 20px;
   font-family: "Josefin Slab", monospace;
@@ -80,14 +82,15 @@
   color: white;
 }
 
+
 .headerLinks:hover {
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
   font-family: "Josefin Slab", monospace;
   color: white;
+  scale: 0.95;
 }
-
 
 #ContactId {
   text-decoration: none;
@@ -98,12 +101,11 @@
 
 @media screen and (max-width: 800px) {
   .Header {
-    scale: 0.9;
-    box-shadow: 0 1.5px darkgray;
+    scale: 0.85;
     gap: 10px 20px;
     transition: all 1s ease-in-out;
   }
   .headerLeft {
-    margin-left: -23px;
+    margin-left: 15px;
   }
 }

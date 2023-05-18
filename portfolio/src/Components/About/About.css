@@ -2,8 +2,7 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  width: 800px;
+  width: 700px;
   height: 450px;
   margin-left: -400px;
   margin-top: 160px;
@@ -19,6 +18,7 @@
   }
   100% {
     opacity: 1;
+
   }
 }
 
@@ -36,11 +36,8 @@
 .transformBio {
   margin-top: 160px;
   margin-left: -400px;
-  scale: 0.1;
-  border: solid gray 4px;
-  z-index: 0;
-  border-radius: 30px;
-  animation: fadeInBio 2s ease-in forwards;
+  scale: 1.5;
+  animation: fadeInBio 1s ease-in forwards;
 }
 
 @keyframes fadeInBio {
@@ -54,9 +51,10 @@
 
 @media screen and (max-width: 800px) {
   .Bio {
-    scale: 0.45;
+    scale: 0.5;
     margin-top: 40px;
-    margin-left: -400px; 
-    /* transition: all 1s ease-in-out; */
+    margin-left: -337px; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
