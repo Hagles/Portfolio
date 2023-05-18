@@ -19,7 +19,6 @@ export default function Header() {
   };
 
   const handleClick = (value) => {
-    // Update the scrollCount value based on the clicked value
     setScrollCount(value);
   };
 
@@ -49,9 +48,9 @@ export default function Header() {
         >
           Skills
         </p>
-        {/* <p className="scroll">{introScroll}</p>
-        <p className="scroll">{scrollCount}</p>
-        <p className="scroll">{width}</p> */}
+        {/* <p className="scroll">{introScroll}</p> */}
+        {/* <p className="scroll">{scrollCount}</p> */}
+        {/* <p className="scroll">{width}</p> */}
       </div>
       <div className="headerRight">
         <p

@@ -24,23 +24,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
   margin-left: 50px;
   font-size: 20px;
   font-family: "Josefin Slab", monospace;
-  color: white
+  color: white;
 }
 
-.skillsText{
+.skillsText {
   font-size: 35px;
 }
-.logos{
+.atAge {
+  margin-top: 20px;
+}
+.bootcamp {
+  margin-top: 20px;
+}
+.participated {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.logos {
   display: flex;
- justify-content: space-evenly;
-  /* justify-content: space-around; */
-  /* width: 40px; */
+  justify-content: space-evenly;
+  margin-top: 10px;
   height: 50px;
 }
-.logo:hover{
+.logo:hover {
   scale: 0.95;
 }
 
@@ -53,20 +64,41 @@
 
 @keyframes fadeInSkills {
   0% {
-    opacity: 1;    
+    opacity: 1;
   }
   100% {
     opacity: 0;
-    
   }
 }
 
 @media screen and (max-width: 800px) {
   .Skills {
-    scale: 0.5;
-    margin-top: 40px;
-    margin-left: 27px; 
+    scale: 0.7;
+    height: 500px;
+    width: 420px;
+    margin-top: 10px;
+    margin-left: -30px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+  }
+  .skillsText {
+    font-size: 30px;
+  }
+  .atAge {
+    margin-top: 20px;
+  }
+  .bootcamp {
+    margin-top: 20px;
+  }
+  .participated {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .logos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    height: 50px;
   }
 }

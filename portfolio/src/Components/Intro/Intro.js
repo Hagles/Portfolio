@@ -5,7 +5,8 @@ import ProfilePicture from "./ProfPic.png";
 import "./Intro.css";
 
 export default function Intro() {
-  const { scrollCount, width  } = useContext(UserContext);
+  
+  const { scrollCount, width, introScroll, setScrollCount } = useContext(UserContext);
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     setIsLoaded(true);
@@ -30,6 +31,7 @@ export default function Intro() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

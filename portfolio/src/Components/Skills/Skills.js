@@ -27,10 +27,10 @@ export default function Skills() {
 
     <p className="skillsText">Skills</p>
     <div>
-    <p>At the age of 34, I decided to take a step forward and change my profession.</p>
-    <p> Prior to that, I had completed an intensive 6-month bootcamp, preceded by over 7 months of self-learning. </p>
-    <p></p>
-    <p></p>
+    <p className="atAge">At the age of 34, I decided to take a step forward and change my profession.</p>
+    <p className="bootcamp">Following this, I completed an intensive 6-month bootcamp, preceded by over 7 months of independent learning.</p>
+    <p className='participated'>I participated in a FullStack training where I learned the fundamentals of Html, Css, React, SQL, Express.js, Node.js, and testing environment. </p>
+    
     <p className="logos">
       <img src={oracle} className="logo"  alt='logo' />
       <img src={salesForce} className="logo"  alt='logo' />

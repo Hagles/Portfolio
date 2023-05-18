@@ -16,7 +16,6 @@ function App() {
   const [introScroll, setIntroScroll] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
 
-
   useEffect(() => {
     function handleScroll() {
       const scrollPosition =
@@ -38,8 +37,8 @@ function App() {
       }else if(introScroll >=60){
         scrollIntro = 60
       }
+      
       setIntroScroll(scrollIntro);
-
       setScrollCount(scrollPosition/width );
       setWidth(window.innerWidth / 30);
     }
@@ -61,7 +60,7 @@ function App() {
         {/* <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/> */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
-      <UserContext.Provider value={{ scrollCount, width, introScroll, setScrollCount  }}>
+      <UserContext.Provider value={{ scrollCount, width, introScroll, setScrollCount }}>
         <Intro className="Intro" />
         <Header className="Header" />
         <About className="About" />

@@ -9,5 +9,12 @@
   height: 10000px;
   touch-action: pan-x pan-y;
   cursor: pointer;
+  /* z-index: 3; */
 
+}
+@media screen and (max-width: 800px) {
+  .App {
+    height: 3000px;
+  }
+  
 }

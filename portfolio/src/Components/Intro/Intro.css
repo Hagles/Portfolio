@@ -1,5 +1,6 @@
 .fade-in {
   opacity: 0;
+  
   animation: fadeInAnimation 2s ease-in forwards;
 }
 
@@ -14,14 +15,19 @@
 
 .Intro {
   position: fixed;
+
+  justify-content: center;
   align-items: center;
-  margin-top: 7%;
+  background-color: black;
+  
+  
 }
 
 .IntroContainer {
   display: flex;
   flex-direction: flex;
   justify-content: flex-start;
+  margin-top: 20%;
   width: 580px;
   height: 500px;
   
@@ -76,7 +82,6 @@
 
 .FadeOut {
     scale: 0;
-    margin-left: 20px;
     animation: fadeout 1.5s ease-in forwards;
 }
 
@@ -123,7 +128,7 @@
     scale: 48%;
     position: fixed;
     align-items: center;
-    margin-top: 7%;
+    margin-top: -100px;
   }
   .FadeOut {
     scale: 23%;

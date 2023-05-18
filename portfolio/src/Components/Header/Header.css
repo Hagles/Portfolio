@@ -3,6 +3,7 @@
 }
 
 .hidden {
+  
   animation: fadeOutHeader 1s ease-in forwards;
 }
 @keyframes fadeInHeader {
@@ -14,6 +15,7 @@
   }
 }
 .show {
+  
   animation: fadeInHeader 1s ease-in forwards;
 }
 
@@ -38,6 +40,7 @@
   align-items: center;
   border-bottom: solid gray 1px;
   box-shadow: 0 0.5px gray;
+
 }
 
 .headerLeft {
