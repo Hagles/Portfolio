@@ -101,7 +101,7 @@
 }
 .transformContactResume {
   margin-top: 160px;
-  margin-left: 8px;
+  margin-left: 80px;
   scale: 1.5;
   animation: fadeInContactResume 1.5s ease-in forwards;
 }
@@ -118,9 +118,70 @@
 @media screen and (max-width: 800px) {
   .ContactResume {
     scale: 0.5;
-    margin-top: 40px;
-    margin-left: 27px;
+    height: 650px;
+    margin-top: -40px;
+    margin-left: 26px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+  }
+  #visiting {
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .interested {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+  }
+  .interested1 {
+    font-size: 25px;
+  }
+  .ContactText {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .GitAndLinkedIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+    
+  .linkedIn {
+    margin-top: 20px;
+    display: flex;
+    scale: 0.9;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .gitHub {
+    margin-top: 20px;
+    display: flex;
+    height: 60px;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  
+  .email {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .canDownload {
+    font-size: 35px;
+    margin-top: 50px;
+  }
+  .download {
+    font-size: 35px;
+    font-family: "Josefin Slab", monospace;
+    color: white;
+    background-color: black;
+    margin-top: 40px;
+    border-top: 0;
+    border-left: solid gray 1px;
+    border-right: solid gray 1px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
   }
 }

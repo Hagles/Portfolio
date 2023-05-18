@@ -108,4 +108,16 @@
   .headerLeft {
     margin-left: 15px;
   }
+  .HeaderProfImg {
+    opacity: 80%;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    transition: all 0.1s ease-in-out;
+  }
+  #bt{
+   font-size: 15px;
+  }
 }

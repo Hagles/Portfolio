@@ -34,7 +34,7 @@ export default function Header() {
           alt="Profile"
           className="HeaderProfImg"
         />
-        <p onClick={() => handleClick(0)} className="headerLinks">
+        <p onClick={() => handleClick(0)} id="bt" className="headerLinks">
           Tomas Balaz
         </p>
         <p

@@ -75,10 +75,9 @@
 }
 
 .FadeOut {
-    scale: 0.1;
-    margin-top: -50px;
-    margin-left: -300px;
-    animation: fadeout 1s ease-in forwards;
+    scale: 0;
+    margin-left: 20px;
+    animation: fadeout 1.5s ease-in forwards;
 }
 
 .FadeOut .IntroContainer {

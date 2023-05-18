@@ -27,7 +27,8 @@ export default function Skills() {
 
     <p className="skillsText">Skills</p>
     <div>
-    <p>"As a curious child, I would often take apart all of my toys. However, over time, I not only learned to put them back together, but these experiences also shaped me and formed the foundation of my programming mindset."</p>
+    <p>At the age of 34, I decided to take a step forward and change my profession.</p>
+    <p> Prior to that, I had completed an intensive 6-month bootcamp, preceded by over 7 months of self-learning. </p>
     <p></p>
     <p></p>
     <p className="logos">
