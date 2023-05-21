@@ -8,7 +8,7 @@ export default function ContactResume() {
   const { scrollCount, width } = useContext(UserContext);
 
   const handleDownload = () => {
-    const fileName = "Balaz Tomas-Resume.pdf";
+    const fileName = "Tomas-Balaz-resume.pdf";
     const fileUrl = `${process.env.PUBLIC_URL}/${fileName}`; // Construct the file URL
 
     const link = document.createElement("a");

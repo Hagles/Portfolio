@@ -7,7 +7,7 @@ export default function Header() {
   const { scrollCount, width, introScroll, setScrollCount  } = useContext(UserContext);
 
   const handleDownload = () => {
-    const fileName = 'Balaz Tomas-Resume.pdf'; 
+    const fileName = 'Tomas-Balaz-resume.pdf'; 
     const fileUrl = `${process.env.PUBLIC_URL}/${fileName}`; // Construct the file URL
   
     const link = document.createElement('a');
